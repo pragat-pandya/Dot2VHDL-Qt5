@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "dot2kiss.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
