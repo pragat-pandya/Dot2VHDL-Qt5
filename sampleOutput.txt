@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity YourEntityName is
+   Port (
+       Input1 : in STD_LOGIC;
+       Input2 : in STD_LOGIC;
+       Output1 : out STD_LOGIC
+   );
+end YourEntityName;
+architecture Behavioral of YourEntityName is
+begin
+   process (Input1, Input2)
+   begin
+       case (Input1 & Input2) is
+           when "x0" =>
+               Output1 <= "11";
+           when others =>
+               Output1 <= 'X';
+       end case;
+   end process;
+end Behavioral;
+
